@@ -1,0 +1,45 @@
+{
+    "attr": {
+        "id": {
+            "news_events": "news_events",
+            "news_other": "news_other"
+        },
+        "class": {
+            "news": "news"
+        }
+    },
+    "title": {
+        "main": "日本臨床心理学会ニュース",
+        "news_events": "イベント・大会情報",
+        "news_other": "その他お知らせ"
+    },
+    "images": {
+        "facebook_image": {
+            "src": "images/facebook_image.png",
+            "alt": "icon_facebook",
+            "class": ""
+        },
+        "twitter_image": {
+            "src": "images/twitter_image.jpg",
+            "alt": "icon_twitter",
+            "class": ""
+        }
+    },
+    "web_update": [
+        "<p class='update_date'>2019.12.16 Mon<span><a href='event'>イベント</a></span></p><p>○○が開催されます。詳細はイベントページにてご確認ください。 </p>",
+        "<p class='update_date'>2019.12.15 SUN<span><a href='conference'>大会</a></span></p><p>○○○○の××××を掲載致しました。○○月××日に○○大学にて実施されます。</p>",
+        "<p class='update_date'>2019.12.16 Mon<span><a href='renaissance_project'>ルネッサンス・プロジェクト</a></span></p><p>○○が開催されます。詳細はイベントページにてご確認ください。 </p>",
+        "<p class='update_date'>2019.12.15 SUN<span><a href='conference'>大会</a></span></p><p>○○○○の××××を掲載致しました。○○月××日に○○大学にて実施されます。</p>",
+        "<p class='update_date' >2019.12.14 SAT<span><a href='event'>イベント</a></span></p><p>○○〇〇企画の○○シンポジウムの情報を掲載致しました。<a href='' type='application/pdf'>PDF</a>に申込書が同封されておりますので、ダウンロードしてご記入の上、ご提出下さい。〆切は○○月○○日となっております。</p>"
+    ],
+    "news_other": [
+        "<p class='update_date'>2019.12.16 Mon<span>学会会則</span></p><p><a href='' type='application/pdf'></a>会則が更新されました。第〇条(○○○○) について変更、 更新があります。 詳細は会則ページにてご確認ください。 </p>",
+        "<p class='update_date'>2019.12.15 SUN<span><a href='statements'>声明,提言,主張</span></p><p>○○○○の××××を掲載致しました。</p>",
+        "<p class='update_date'>2019.12.13 FRI<span>出版物</span></p><p>○○〇〇社より△△△△が出版されました。詳細は<a href=''>こちら</a>にて掲載しております。出版社の紹介ページは<a href=''>こちらから</a></p>"
+    ],
+    "link": {
+        "class": "link",
+        "text": "過去のニュースをすべて見る",
+        "target": "news"
+    }
+}

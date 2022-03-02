@@ -1,0 +1,65 @@
+{
+    "title": "日本臨床心理学会<ruby><rt>Japan Society of ClinicalPsychology</rt></ruby>",
+    "global_nav": [
+        {
+            "text": "ホーム<br><span>HOME</span>",
+            "link": "./"
+        },
+        {
+            "text": "学会について<br><span>About Us</span>",
+            "link": "about"
+        },
+        {
+            "text": "ルネッサンスフォーラム<br><span>Renaissance Forum</span>",
+            "link": "renaissance_rorum"
+        },
+        {
+            "text": "関連情報<br><span>Infomation</span>",
+            "link": "infomation"
+        },
+        {
+            "text": "大会<br><span>Conference</span>",
+            "link": "conference"
+        },
+        {
+            "text": "会則<br><span>Regulations</span>",
+            "link": "regulations"
+        },
+        {
+            "text": "声明,提言,主張<br><span>Statements</span>",
+            "link": "statements"
+        },
+        {
+            "text": "研修会/イベント<br><span>Studies,Events</span>",
+            "link": "studies"
+        },
+        {
+            "text": "学会誌<br><span>Booklet</span>",
+            "link": "booklet"
+        },
+        {
+            "text": "出版物<br><span>Publication</span>",
+            "link": "publication"
+        },
+        {
+            "text": "会員ページ<br><span>MembersPage</span>",
+            "link": ""
+        },
+        {
+            "text": "リンク<br><span>Links</span>",
+            "link": "links"
+        },
+        {
+            "text": "<img class='icon_sns' src='images/facebook.png' alt='facebook' />",
+            "link": "https://ja-jp.facebook.com/"
+        },
+        {
+            "text": "<img class='icon_sns' src='images/twitter.png' alt='twitter'>",
+            "link": "https://twitter.com/login?lang=ja"
+        },
+        {
+            "text": "<img class='icon_sns' src='images/youtube.jpg' alt='youtube'>",
+            "link": "https://www.youtube.com/?gl=JP&hl=ja"
+        }
+    ]
+}

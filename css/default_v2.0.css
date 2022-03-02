@@ -1,0 +1,902 @@
+/*
+Cascading Style Sheets for "draft.nichirinshin.info"
+author: tatsuya osada
+created : YYYY/MM/DD
+modified : 
+        YYYY/MM/DD : tatsuya osada
+        YYYY/MM/DD : tatsuya osada
+        YYYY/MM/DD : tatsuya osada
+NPO法人多摩草むらの会 パソコンサロン夢像 All Rights Reserved
+*/
+
+@charset 'UTF-8';
+body {
+  background: url("../images/background_sample.jpeg") repeat;
+}
+
+a:link {
+  color: #444;
+}
+
+header {
+  height: 350px;
+  /* FIXME::
+  画像はダミーなので、本実装の際には外す
+  (ヘッダー画像がなくてもそれなりに見栄えする様なのが理想かな) 
+  */
+  background: url("../images/header_sample3.jpg") no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed; */
+}
+
+header h1 {
+  letter-spacing: 5px;
+  background: #fff;
+  padding: 10px;
+  color: #333;
+  text-align: left;
+  font: oblique 35px meiryo;
+  text-shadow: 4.5px 3.5px 2.5px #dadada;
+  opacity: 0.8;
+}
+
+header h1 a:link,
+header h1 a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+header h1:before {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 43px;
+  background-image: url("../images/leaf.gif");
+  vertical-align: top;
+}
+
+header ruby {
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  margin: 0 8px;
+}
+
+header nav {
+  width: 100%;
+  /*
+  border-top: 1px solid #dadada;
+  margin: 12px auto;
+  position: relative;
+  top: 400px;
+  z-index: 2;
+  */
+}
+
+/* 
+モバイル用プルダウンメニュー
+メディアクエリに応じてjavascriptが表示を処理する
+*/
+
+nav ul#mobile_nav {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+header nav ul > li {
+  width: 300px;
+  letter-spacing: 2px;
+  text-align: center;
+  font: bold 12px meiryo;
+  word-wrap: none;
+}
+
+header nav ul > li span {
+  font-size: x-small;
+  text-align: center;
+}
+
+header nav ul > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+  /* background: linear-gradient(#fff, #c0c0c0); */
+  background: #fff;
+  text-align: center;
+  border-left: 2px solid #cccccc;
+  color: #333;
+  transition: all 1s ease;
+}
+
+header nav ruby {
+  font-size: 0.2em;
+}
+
+header nav ul > li a:hover {
+  display: block;
+  background: linear-gradient(#008000, #00aa00, #008000);
+  color: #fff;
+}
+
+article.content {
+  margin: 12px auto;
+  width: 55%;
+}
+
+article.content h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  border-bottom: 1px solid #333;
+  font: oblique 22px meiryo;
+  padding: 44px 0 14px;
+  color: #444444;
+}
+
+article.content h3 {
+  margin: 12px;
+}
+
+article.content p {
+  font: oblique 14px meiryo;
+  color: #444444;
+  margin: 12px;
+}
+
+article.content p.link {
+  background: #f4a460;
+  text-align: center;
+  margin: 12px auto;
+  padding: 5px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px;
+  width: 50%;
+}
+
+article.content p.link > a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+TODO::提案用
+*/
+article.content figure.thumbnail > img {
+  float: left;
+  margin: 8px;
+  border: 4px double #a7d28d;
+  width: 300px;
+}
+
+/*
+TODO::提案用
+*/
+article.content figure.thumbnails img {
+  display: inline-block;
+  border: 4px double #a7d28d;
+  width: 30%;
+}
+
+section.news {
+  /* flexコンテナを生成する */
+  display: flex;
+  /* コンテナ配下を中心に設定する */
+  justify-content: center;
+}
+
+section#news_sns {
+  width: 90%;
+  margin: 6px;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+}
+
+section#news_sns img {
+  margin: 12px;
+  width: 90%;
+  border: 1px solid#999;
+  box-shadow: 3px 2px #dadada;
+}
+
+section#news_web {
+  margin: 6px;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+}
+
+section#news img {
+  margin: 12px;
+  width: 90%;
+  border: 1px solid#999;
+  box-shadow: 3px 2px #dadada;
+}
+
+section#news_web section {
+  border: 1px solid #808080;
+  margin: 12px;
+  padding: 4px;
+  background: #fff;
+}
+
+section#news_web section p {
+  color: #444;
+  font-size: 0.8em;
+}
+
+section#news_web section p > span {
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 12px;
+  padding: 4px;
+  background: #f4a460;
+}
+
+section.news h3 {
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  padding: 12px;
+  background: #c0c0c0;
+  color: #444;
+  border-bottom: 1px solid #999;
+}
+
+section#news_web p > a {
+  color: #444;
+}
+
+section#news_web p > a:after {
+  color: #444;
+}
+
+table {
+  margin: 4px auto;
+}
+
+table > tbody th,
+table > tbody td {
+  padding: 6px;
+  border: 1px solid #999;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+footer {
+  min-height: 100px;
+  background: #808080;
+  padding: 12px;
+  margin: 20px 0 0 0;
+  border: 1px solid #808080;
+  opacity: 0.8;
+}
+
+footer address {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  color: #fff;
+  float: right;
+  margin: 4px;
+  padding: 4px;
+  text-align: left;
+}
+
+footer ul > li {
+  line-height: 1.5em;
+  font-size: 13px;
+  color: #fff;
+  padding: 2px 12px;
+}
+
+/*
+footer ul > li:after:not(:last-child){
+content : "|";
+color: #FFF;
+padding: 0 2px;
+}
+*/
+
+footer ul > li > a {
+  color: #fff;
+}
+
+footer ul > li > a:visited {
+  color: #fff;
+}
+
+/*
+a[type="application/pdf"] img{
+width: 45px;
+height: 45px;
+}
+*/
+
+#scroller {
+  z-index: 1;
+  opacity: 0.3;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+#scroller img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#scroller:hover {
+  opacity: 0.8;
+}
+
+a[type="application/pdf"]:before {
+  content: url(../images/pdf_download.jpg);
+}
+
+/*
+FIXME::
+とりあえず最近の大きめのスマートフォンなら大体見れる程度の
+ブレークポイントとして。もしこのサイズに準じない端末に
+対応しなければならないのなら新たに追記するなり何なりする
+*/
+
+@media screen and /* (min-width: 568px) and */ (max-width: 660px) {
+  a[type="application/pdf"]:before {
+    /* content: url(../images/pdf_download_small.jpg); */
+    content: "";
+  }
+  header {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+  }
+  header h1 {
+    font-size: 1.65em;
+    /* FIXME:: モバイル端末用グローバルメニューテスト用 */
+    padding: 2px;
+    letter-spacing: 8px;
+  }
+  /* FIXME::もしモバイルでロゴを消すなら使う */
+  header h1::before {
+    background: none;
+  }
+  header ruby {
+    /* FIXME:: モバイル端末用グローバルメニューテスト用 */
+    display: none;
+  }
+  header nav {
+    /* FIXME:: モバイル端末用グローバルメニューテスト用 */
+    /* height: 60px; */
+    display: none;
+  }
+  header nav ul > li {
+    font-size: 0.5em;
+    letter-spacing: 0;
+    margin-left: 1.5px;
+    white-space: nowrap;
+  }
+  header nav ul > li span {
+    display: none;
+  }
+  img.icon_sns {
+    /*
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        */
+    display: none;
+  }
+  /** FIXME::以下、モバイル端末用グローバルメニューの試験的実装*/
+  nav ul#mobile_nav > li ul {
+    position: absolute;
+    z-index: 2;
+  }
+  nav ul#mobile_nav {
+    display: block;
+    background: #fff;
+  }
+  nav ul#mobile_nav ruby rt {
+    letter-spacing: 3px;
+    background: #fff;
+    color: #333;
+    font: oblique 12px meiryo;
+    text-shadow: 3.5px 3.5px 2.5px #dadada;
+  }
+  nav ul#mobile_nav img#threeline {
+    display: inline-block;
+    margin: 4px 0;
+  }
+  nav ul#mobile_nav > li > ul > li {
+    opacity: 0;
+    box-shadow: 1px 1px #a9a9a9;
+    display: block;
+    font-size: 12px;
+    background: #a7d28d linear-gradient(#fff, #fff);
+    border: 1px solid #deb887;
+    border-radius: 2px;
+    color: #333;
+    padding: 6px;
+    text-shadow: 2px 3px #dadada;
+    text-align: left;
+    transition: opacity 0.3s ease-out;
+  }
+  nav ul#mobile_nav > li > ul > li > a {
+    display: inline-block;
+    color: #333;
+    padding: 4px;
+    text-decoration: none;
+  }
+  /* FIXME::
+    nav ul#mobile_nav>li>ul>li>a:active {
+        background: #f4a460;
+    }
+    */
+  article.content {
+    width: 90%;
+  }
+  article.content h2 {
+    font-size: 16px;
+  }
+  article.content p {
+    font-size: 10px;
+  }
+  article.content p.link {
+    width: 30%;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  section.news {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+  }
+  section#news_sns,
+  section#news_web {
+    width: 100%;
+    margin: 5px auto;
+  }
+  section#news_web section p {
+    font-size: 10px;
+  }
+  section#news_sns img {
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin: 12px auto;
+  }
+  footer address {
+    font-size: 4px;
+    line-height: 13px;
+  }
+  footer ul > li {
+    font-size: 6px;
+  }
+  footer ul > li > a:link {
+    color: #fff;
+  }
+  footer img.icon_sns {
+    display: none;
+  }
+
+  /** 以下、下層ページ用
+  article.content.lower address {
+  }
+   */
+
+  figure.map img {
+    min-width: 250px;
+    max-width: 400px;
+  }
+
+  iframe {
+    min-width: 250px;
+    max-width: 400px;
+  }
+}
+
+img.icon_sns {
+  display: inline-block;
+  position: relative;
+  margin: 12px 8px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+}
+
+/* for Vue's Transition */
+
+.loading-enter-active,
+.loading-leave-active {
+  transition: opacity 3s, transform 2s;
+}
+
+.loading-enter {
+  opacity: 0;
+  transform: translateY(40%);
+}
+
+.loading-leave-to {
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes cloak-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+#vue_app {
+  animation: cloak-in 2.5s;
+}
+
+#vue_app[v-cloak] {
+  opacity: 0;
+}
+
+/* FIXME::IEはともかくとして、Edgeで何故か上手く動作しない
+ * ヘッダーの追従を実装するならコイツを有効にする
+ */
+.sticky {
+  position: sticky;
+  top: 0;
+  background: none;
+  z-index: 0;
+}
+
+/* 
+以下、下層ページ用CSS
+TODO::上述のコードは変更しない事！
+*/
+
+/*
+個別コンテンツの包含ブロック要素の定義
+@<article class="content lower">
+    </article>
+の様に使い、この要素の中に各資料を元にコーディングしていく事になる
+*/
+
+article.content.lower {
+  margin-top: 40px;
+  border: 4px double #c0c0c0;
+  border-radius: 4px;
+  background: #fff;
+  /* 長文テキストがメインのため、横幅が大きいとかなり見辛い
+   width: 80%; 
+   */
+}
+
+/*
+各コンテンツの日付
+基本的に上述のarticle直下に記述する事を想定している
+@<article class="content lower">
+    <time datetime="{YYYY-MM-DD}">{YYYY-MM-DD}</time>
+    </article>
+と言った記述になる。datetime属性を付けるのを忘れずに！
+*/
+
+article.content.lower time[datetime] {
+  display: block;
+  float: right;
+  margin: 10px;
+  font-style: italic;
+  font-size: 13.5px;
+}
+
+article.content.lower time[datetime]::before {
+  content: "(";
+}
+
+article.content.lower time[datetime]::after {
+  content: ")";
+}
+
+/*
+各コンテンツのタイトルとなる要素の定義
+@<article class="content lower">
+    <time>~</time>
+    <h2>{資料におけるタイトル}</h2>
+</article>
+と言う記述となる。
+*/
+
+article.content.lower h2 {
+  text-align: left;
+  letter-spacing: 1px;
+  text-shadow: 1px 0.5px #999;
+  padding: 6px 8px;
+  border-left: 4px solid #f4a460;
+  border-bottom: 2px solid #f4a460;
+  /*
+  background: #e2e9b0;
+  color: #4f8f4a;
+  border-bottom: 2px solid #4f8f4a;
+  */
+}
+
+/*
+コンテンツにPDFの添付の指定があるケースのみで用いる。セレクタが示す通り、
+h2の入れ子として記述する事を想定している。
+type属性の記述を忘れてしまうと反映されないので注意。
+@<h2>{資料におけるタイトル}<span><a type="application/pdf" href={PDFデータの相対パス}></h2>
+と言った記述になる。
+*/
+
+article.content.lower span a[type="application/pdf"] {
+  vertical-align: text-bottom;
+  content: url(../images/pdf_download_small.jpg);
+  padding: 4px;
+}
+
+/*
+article.content.lower h2::before {
+  content: url(../images/leaf.gif);
+}
+ */
+
+/* 
+h3は掲載資料にサブタイトルが存在するケースにのみ
+用いるものとする
+*/
+article.content.lower h3 {
+  letter-spacing: 2px;
+  color: #444444;
+  font-size: 15px;
+  padding: 4px;
+  text-align: center;
+  text-shadow: 0px 0.5px #999;
+  border-bottom: 2px solid #deb887;
+}
+
+article.content.lower h4 {
+  letter-spacing: 2px;
+  color: #444444;
+  font-size: 15px;
+  padding: 6px;
+  text-shadow: 0px 0.5px #999;
+  border-bottom: 1px solid #444444;
+}
+
+/* article.content.lower h3::before, */
+article.content.lower h4::before {
+  content: url(../images/h_icon.png);
+  padding: 4px;
+}
+
+article.content.lower p {
+  padding: 2px;
+}
+
+article.content.lower p.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+article.content.lower table {
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 12px auto;
+  max-width: 95%;
+}
+
+/*
+テーブルの定義
+省略系を使っても良いが、基本的にはセレクタに従って
+記述して欲しい
+*/
+
+article.content.lower table tbody tr th,
+article.content.lower table tbody tr td {
+  border: 1.5px solid #736e6a;
+  padding: 12px;
+  vertical-align: middle;
+}
+
+article.content.lower table tbody tr th {
+  background: #999;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*
+各リストのスタイル定義。現状では入れ子での記述は想定していないため
+定義していないが、必要であれば追記する必要があるかも
+*/
+
+article.content.lower ul,
+article.content.lower ol {
+  padding: 6px;
+  font: 13px meiryo;
+  color: #444444;
+  margin: 2px;
+}
+
+article.content.lower ul > li {
+  margin-left: 28px;
+  list-style-type: disc;
+}
+
+article.content.lower ol > li {
+  margin-left: 28px;
+  list-style-type: decimal;
+}
+
+article.content.lower address {
+  text-align: right;
+  color: #444444;
+  margin: 8px;
+}
+
+article.content.lower address ul > li {
+  list-style: none;
+}
+
+/*
+会則ページ用
+FIXME::article.content.lowerは省いても良いかも
+*/
+
+article.content.lower section#regulations dl {
+  font: meiryo;
+  color: #444444;
+}
+
+article.content.lower section#regulations dt {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  padding: 8px;
+  margin: 6px 2px;
+  background: #ffcc66;
+}
+
+article.content.lower section#regulations dd {
+  /* FIXME::text-indent: 1em; */
+  font: normal 13px meiryo;
+  padding: 6px;
+}
+
+article.content.lower section#regulations ol ol > li {
+  list-style-type: decimal;
+  font-style: oblique;
+}
+
+/* FIXME::研修会/イベントページ用*/
+article.content.lower section.studies {
+  font: normal meiryo;
+  color: #444444;
+}
+
+article.content.lower section.studies table th {
+  font-weight: bold;
+}
+
+article.content.lower .details {
+  border: 4px double #a7d28d;
+  padding: 6px;
+  margin: 6px;
+}
+
+article.content.lower .details li {
+  padding: 4px 0;
+}
+
+article.content.lower em {
+  font-weight: bold;
+}
+
+article.content.lower figure.books {
+  float: left;
+}
+
+article.content.lower figure.books img {
+  width: 200px;
+  height: 280px;
+  margin: 8px;
+}
+
+/*
+TODO::提案用
+*/
+article.content.lower figure.main_visual {
+  float: left;
+}
+
+article.content.lower figure.main_visual img {
+  width: 280px;
+  display: inline-block;
+  margin: 6px;
+  border: 1px double #a7d28d;
+  box-shadow: 1px 1px #dadada;
+}
+
+/*
+TODO::提案用
+*/
+article.content figure.main_visuals img {
+  display: inline-block;
+  margin: 4px;
+  border: 4px double #a7d28d;
+  width: 30%;
+}
+
+/**
+下層ページ用モバイル端末
+*/
+@media screen and /* (min-width: 568px) and */ (max-width: 660px) {
+  article.content.lower h2 span a[type="application/pdf"] {
+    content: "";
+  }
+
+  article.content.lower h2::before {
+    content: "";
+  }
+
+  article.content.lower h2,
+  article.content.lower h3 {
+    font-size: smaller;
+  }
+
+  article.content.lower table tbody tr th {
+    font-size: smaller;
+    padding: 0.5px;
+  }
+
+  article.content.lower figure.main_visual {
+    float: left;
+  }
+
+  article.content.lower figure.main_visual img {
+    width: 125px;
+    display: inline-block;
+    margin: 4px;
+    border: 1px double #a7d28d;
+    box-shadow: 1px 1px #dadada;
+  }
+
+  article.content figure.main_visuals img {
+    display: inline-block;
+    margin: 4px;
+    border: 4px double #a7d28d;
+    width: 25%;
+  }
+
+  img.icon_sns {
+    display: none;
+  }
+
+  .sticky {
+    position: relative;
+  }
+}
+
+/*
+ * 以下、js用のモジュール
+ */
+.menu_focus {
+  background: linear-gradient(#008000, #00aa00, #008000);
+  color: #fff;
+}
+
+._hidden {
+  display: none;
+}

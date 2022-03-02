@@ -1,0 +1,41 @@
+{
+    "title": "学会誌",
+    "texts": [
+        "学会誌「 臨床心理学研究」（略称「 臨心研」）は年２回発行されます。",
+        "掲載論文は<a href='https://ci.nii.ac.jp/'>CiNii – NII論文情報ナビゲータ</a>で検索できます。",
+        "掲載論文のコピーは、<a href='http://www.medicalonline.jp/'>メディカルオンライン</a>から有償にて入手することができます。"
+    ],
+    "url": {
+        "cinii": "https://ci.nii.ac.jp/",
+        "medicalonline": "http://www.medicalonline.jp/"
+    },
+    "images": {
+        "cinii": {
+            "src": "images/cinii.jpg",
+            "alt": "CiNIIBooks",
+            "width": "140px",
+            "height": "40px",
+            "style": {
+                "width": "140px",
+                "border": "1px solid #444",
+                "margin": "12px"
+            }
+        },
+        "medicalonline": {
+            "src": "images/medical.gif",
+            "alt": "MedicalOnline",
+            "width": "140px",
+            "height": "40px",
+            "style": {
+                "width": "140px",
+                "border": "1px solid #444",
+                "margin": "12px"
+            }
+        }
+    },
+    "link": {
+        "class": "link",
+        "text": "学会誌について詳しく見る",
+        "target": "booklet"
+    }
+}

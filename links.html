@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>日本臨床心理学会 | リンク</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <script type="application/javascript" src="script/libs/promise-6.1.0.js"></script>
+  <script type="application/javascript" src="script/libs/TextEncoderTextDecoder.js"></script>
+  <script type="application/javascript" src="script/libs/vue.js"></script>
+  <script>
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1)
+      document.write('<script type="application/javascript" src="script/vue-components-ie-polyfill.js"><\/script>');
+    else
+      document.write('<script type="application/javascript" src="script/vue-general-components.js"><\/script>\n\
+                        <script type="application/javascript" src="script/navgations_mobile.js"><\/script>');
+  </script>
+  <script type="application/javascript" src="script/scroller.js"></script>
+  <link rel="stylesheet" href="css/reset.css" media="all">
+  <link rel="stylesheet" href="css/default.css" media="screen">
+  <script>
+    window.addEventListener("load", e =>
+      document.getElementById(location.pathname.split("/").pop()).classList.add("menu_focus"));
+  </script>
+</head>
+
+<body>
+  <section id="vue_app">
+
+    <!-- use VueComponent-->
+    <vue-mobile-header-content></vue-mobile-header-content>
+    <vue-header-content></vue-header-content>
+    <!-- end of VueComponent-->
+
+    <article class="content lower">
+      <h2>リンク</h2>
+      <ul>
+        <li><a href="http://www.onyx.dti.ne.jp/~psycho/" target="_blank">全国保険・医療・福祉心理職能協会（略称「全心協」）</a></li>
+        <li><a href="https://www.jaot.or.jp/" target="_blank">日本作業療法士協会</a></li>
+        <li><a href="https://www.jamhsw.or.jp/" target="_blank">日本精神保健福祉協会</a></li>
+        <li><a href="http://seijukon.com/" target="_blank">精神保健従事者団体懇談会(精従懇）</a></li>
+        <li><a href="https://www.c-linkage.co.jp/jsmd15/" target="_blank">日本うつ病学会</a></li>
+      </ul>
+    </article>
+
+    <!-- use VueComponent-->
+    <vue-footer-content></vue-footer-content>
+    <vue-scroller-content></vue-scroller-content>
+    <!-- end of VueComponent --->
+  </section>
+</body>
+
+</html>

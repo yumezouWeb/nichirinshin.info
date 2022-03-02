@@ -1,0 +1,41 @@
+{
+    "attr": {
+        "id": {
+            "news_events": "news_events",
+            "news_other": "news_other"
+        },
+        "class": {
+            "news": "news"
+        }
+    },
+    "title": {
+        "main": "日本臨床心理学会ニュース",
+        "news_events": "イベント・大会情報",
+        "news_other": "その他お知らせ"
+    },
+    "images": {
+        "facebook_image": {
+            "src": "images/facebook_image.png",
+            "alt": "icon_facebook",
+            "class": ""
+        },
+        "twitter_image": {
+            "src": "images/twitter_image.jpg",
+            "alt": "icon_twitter",
+            "class": ""
+        }
+    },
+    "web_update": [
+        "<p class='update_date'>2021.7.12 MON<span><a href='/renaissance_project'>ルネッサンス・プロジェクト</a></span></p><p class='news_emphasis'>８月１日の夕方</p><p class='news_emphasis' style='font-weight : bold !important;'>模索研究読書会第6回<br><span class='not_category' style='font-size : 0.7em; font-weight: normal;'>を開催します！</p><p>――<span class='not_category' style='color:#FF0000 !important; font-weight:bold;'>テーマごとの小グループ</span>で集まり、対話反想法を生かしたグループワークを楽しむ――</p><p>※ガーゲンの『現実はいつも対話から生まれる』を最初から最後まで読みます。</p><p>参加費:無料</p><p>定員:約30名、15名までは先着順。<br>→次締め切りは7月15日</p><p>申込み:&#110;&#114;&#115;&#46;&#112;&#108;&#117;&#115;&#64;&#116;&#103;&#46;&#99;&#111;&#109;&#109;&#117;&#102;&#97;&#46;&#106;&#112;</p><p>※詳しい情報は、近いうちに掲載します。</p>",
+        "<p class='update_date'>2021.6.14 THU<span><a href='/renaissance_project'>ルネッサンス・プロジェクト</a></span></p><p>次回<em style='font-weight:bold; font-size : 1.2em;'>（第5回）</em>の模索研究読書会のお知らせです。</p><p>➡終了しました。</p>",
+        "<p class='update_date'>2021.5.27 THU<span><a href='/renaissance_project'>ルネッサンス・プロジェクト</a></span></p><p>5月22日、第４回「模索研究読書会」を18時からzoomで開きました。</p><p>➡終了しました。</p>"
+    ],
+    "news_other": [
+        "<p class='update_date'>2021.5.27 THU<span>お知らせ</span></p><p>日本臨床心理学会ホームページをリニューアルしました！そして、これからもリニューアルは少しづつ続いていきます。</p>"
+    ],
+    "link": {
+        "class": "link",
+        "text": "過去のニュースをすべて見る",
+        "target": "news"
+    }
+}

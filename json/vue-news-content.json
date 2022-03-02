@@ -1,0 +1,37 @@
+{
+    "attr": {
+        "id": {
+            "news_events": "news_events",
+            "news_other": "news_other"
+        },
+        "class": {
+            "news": "news"
+        }
+    },
+    "title": {
+        "main": "日本臨床心理学会ニュース",
+        "news_events": "イベント・大会情報",
+        "news_other": "その他お知らせ"
+    },
+    "images": {
+        "facebook_image": {
+            "src": "images/facebook_image.png",
+            "alt": "icon_facebook",
+            "class": ""
+        },
+        "twitter_image": {
+            "src": "images/twitter_image.jpg",
+            "alt": "icon_twitter",
+            "class": ""
+        }
+    },
+    "web_update": [],
+    "news_other": [
+        "<p class='update_date'>2021.5.27 THU<span>お知らせ</span></p><p>日本臨床心理学会ホームページをリニューアルしました！そして、これからもリニューアルは少しづつ続いていきます。</p>"
+    ],
+    "link": {
+        "class": "link",
+        "text": "過去のニュースをすべて見る",
+        "target": "news"
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <script type="application/javascript" src="script/libs/promise-6.1.0.js"></script>
+    <script type="application/javascript" src="script/libs/TextEncoderTextDecoder.js"></script>
+    <script type="application/javascript" src="script/libs/vue.js"></script>
+    <script>
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1)
+            document.write('<script type="application/javascript" src="script/vue-components-ie-polyfill.js"><\/script>');
+        else
+            document.write('<script type="application/javascript" src="script/vue-general-components.js"><\/script>\n\
+                        <script type="application/javascript" src="script/navgations_mobile.js"><\/script>');
+    </script>
+    <script type="application/javascript" src="script/scroller.js"></script>
+    <link rel="stylesheet" href="css/reset.css" media="all">
+    <link rel="stylesheet" href="css/default.css" media="screen">
+</head>
+
+<body>
+    <section id="vue_app">
+
+        <!-- use VueComponent-->
+        <vue-mobile-header-content></vue-mobile-header-content>
+        <vue-header-content></vue-header-content>
+        <article class="content">
+            <h2 style="font-style: oblique;">403 Forbidden</h2>
+            <p style="text-align: center;">ご指定の<abbr title="Uniform Resource Locator">URL</abbr>の閲覧は許可されていません。</p>
+        </article>
+        <!-- use VueComponent-->
+        <vue-footer-content></vue-footer-content>
+        <vue-scroller-content></vue-scroller-content>
+        <!-- end of VueComponent --->
+    </section>
+</body>
+
+</html>

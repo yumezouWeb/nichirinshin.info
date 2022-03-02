@@ -1,0 +1,84 @@
+{
+    "attr": {
+        "id": {
+            "mobile_nav": "mobile_nav",
+            "nav_menu": "nav_menu"
+        },
+        "class": {}
+    },
+    "ruby": "Japan Society of ClinicalPsychology",
+    "mobile_nav": [
+        {
+            "text": "ホーム",
+            "link": ""
+        },
+        {
+            "text": "学会について",
+            "link": "about"
+        },
+        {
+            "text": "ルネッサンスフォーラム",
+            "link": "renaissance_rorum"
+        },
+        {
+            "text": "大会",
+            "link": "conference"
+        },
+        {
+            "text": "関連情報",
+            "link": "infomation"
+        },
+        {
+            "text": "会則",
+            "link": "regulations"
+        },
+        {
+            "text": "声明/提言/主張",
+            "link": "statements"
+        },
+        {
+            "text": "研修会/イベント",
+            "link": "studies"
+        },
+        {
+            "text": "学会誌",
+            "link": "booklet"
+        },
+        {
+            "text": "会員ページ",
+            "link": "members/login/"
+        },
+        {
+            "text": "リンク",
+            "link": "link"
+        },
+        {
+            "text": "facebook",
+            "link": ""
+        },
+        {
+            "text": "Twitter",
+            "link": ""
+        },
+        {
+            "text": "youtube",
+            "link": ""
+        }
+    ],
+    "images": {
+        "three_line": {
+            "id": "threeline",
+            "src": "images/three_line.png",
+            "alt": "mobile_menu",
+            "style": {
+                "width": "30px",
+                "height": "30px"
+            }
+        },
+        "facebook": {
+            "src": "images/facebook.png",
+            "class": "icon_sns",
+            "alt": "facebook"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "sns_icon": [
+        {
+            "text": "<img class='icon_sns' src='images/facebook.png' alt='facebook' />",
+            "link": "https://ja-jp.facebook.com/"
+        },
+        {
+            "text": "<img class='icon_sns' src='images/twitter.png' alt='twitter'>",
+            "link": "https://twitter.com/login?lang=ja"
+        },
+        {
+            "text": "<img class='icon_sns' src='images/youtube.jpg' alt='youtube'>",
+            "link": "https://www.youtube.com/?gl=JP&hl=ja"
+        }
+    ]
+}

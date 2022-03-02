@@ -1,0 +1,29 @@
+{
+    "container": "header",
+    "contents": {
+        "h1": {
+            "text": "{{title}}",
+            "attr": {
+                "v-html": "title"
+            }
+        },
+        "nav": {
+            "contents": {
+                "ul": {
+                    "li": {
+                        "attr": {
+                            "v-for": "nav in global_nav"
+                        },
+                        "a": {
+                            "text": "{{nav.text}}",
+                            "attr": {
+                                "v-bind:href": "nav.link",
+                                "v-html": "nav.text"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

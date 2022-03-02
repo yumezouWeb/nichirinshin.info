@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <script type="application/javascript" src="script/libs/promise-6.1.0.js"></script>
+    <script type="application/javascript" src="script/libs/TextEncoderTextDecoder.js"></script>
+    <script type="application/javascript" src="script/libs/vue.js"></script>
+    <script>
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1)
+            document.write('<script type="application/javascript" src="script/vue-components-ie-polyfill.js"><\/script>');
+        else
+            document.write('<script type="application/javascript" src="script/vue-general-components.js"><\/script>\n\
+                    <script type="application/javascript" src="script/navgations_mobile.js"><\/script>');
+    </script>
+    <script type="application/javascript" src="script/scroller.js"></script>
+    <link rel="stylesheet" href="css/reset.css" media="all">
+    <link rel="stylesheet" href="css/default.css" media="screen">
+    <script>
+        window.addEventListener("load", e =>
+            document.getElementById(location.pathname.split("/").pop()).classList.add("menu_focus"));
+    </script>
+</head>
+
+<body>
+    <section id="vue_app">
+
+        <!-- use VueComponent-->
+        <vue-mobile-header-content></vue-mobile-header-content>
+        <vue-header-content></vue-header-content>
+        <!-- end of VueComponent-->
+
+        <article class="content lower">
+            <h2>日臨心ルネッサンス・フォーラム＃７<span><a type="application/pdf" href="" target="_blank"></a></span></h2>
+            <h3>地域・組織でDialogueの活用を目指す～オープンダイアローグとの出会いから～</h3>
+            <p class="details" style="margin: 8px;">
+                （以下は12月にお知らせしたものをほぼ同じものですが、内容に関しては、前回の予告編の後の展開を踏まえてさらに充実すべく、修整があるかもしれません。）
+            </p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th style="width: 20%;">日時</th>
+                        <td>
+                            <p>1月23日（土曜日）19時から約2時間</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>話題提供</th>
+                        <td>
+                            <p>小畑あきら（おばっちゃん＠京都 本職は写真動画屋）</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>聞き手</th>
+                        <td>
+                            <p>梅まめ（梅下節瑠）</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>申し込み</th>
+                        <td>
+                            <p>今回のフォーラムに何を期待しているかを含めた簡単な自己紹介を書き添えて&#110;&#114;&#115;&#46;&#112;&#108;&#117;&#115;&#64;&#116;&#103;&#46;&#99;&#111;&#109;&#109;&#117;&#102;&#97;&#46;&#106;&#112;に申し込んでください。
+                            </p>
+                            <p>★受付が完了した方には、新年明けてから、このフォーラムの詳細と反想法に関しての案内をお送りします。</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <figure class="main_visual">
+                <img src="images/image_dammy.jpg" alt="">
+            </figure>
+            <p>小畑あきらは、動画でのインタビュアーの経験からオープンダイアローグに出会い、「対話」が精神医療を越えて極めて重要なことに気づかされました。
+                反想法（リフレクティング）も活かした対話が社会一般に広まることを願い、いろいろな活動をしています。</p>
+            <p>対話の必要性を訴え、スキル向上を推奨するなかで、福祉関係の資格がるわけでもなく専門家でもないのですが、福祉施設で働く職員さんに向けて
+                「対話の研修」の講師を依頼されるまでになりました。現在は、コロナ禍のお陰で（？）就労支援・B型事業所での非常勤の職員しています。</p>
+            <p>福祉だけに限りませんが、現場でどのようにすればDialogueが根付くか、生きる上で「対話」がどのような力にどのような力になり得るかなどを、
+                人との関係性の中で共に考えながら、日々新たに多方面へ働きかけています。
+            </p>
+            <p>★今回は対人援助の専門家でない人が多くいらっしゃることを期待しています。参加の条件も緩やかにしてもいいと思っていますので、事情がある方は連絡してください。</p>
+            <figure class="main_visuals">
+                <img src="images/image_dammy.jpg" alt="">
+                <img src="images/image_dammy.jpg" alt="">
+                <img src="images/image_dammy.jpg" alt="">
+            </figure>
+        </article>
+        <article class="content lower">
+            <h2>日臨心ルネッサンスフォーラム＃6
+                <span><a type="application/pdf" href="" target="_blank"></a></span>
+            </h2>
+            <h3>地域・組織でDialogueの活用を目指す～オープンダイアローグとの出会いから～</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>日時</th>
+                        <td>12月20日（日曜日）14時から2時間程度</td>
+                    </tr>
+                    <tr>
+                        <th>話題提供</th>
+                        <td>小畑あきら（おばっちゃん＠京都 本職は写真動画屋）</td>
+                    </tr>
+                    <tr>
+                        <th>聞き手</th>
+                        <td>梅まめ（梅下節瑠）</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figure class="main_visual">
+                <img src="images/image_dammy.jpg" alt="">
+            </figure>
+            <p>小畑あきらは、動画でのインタビュアーの経験からオープンダイアローグに出会い、「対話」が精神医療を越えて極めて重要なことに気づかされました。
+                反想法（リフレクティング）も活かした対話が社会一般に広まることを願い、いろいろな活動をしています。</p>
+            <p>対話の必要性を訴え、スキル向上を推奨するなかで、福祉関係の資格があるわけでもなく専門家でもないのですが、福祉施設で働く職員さんに向けて「対話の研修」の講師を依頼されるまでになりました。現在は、コロナ禍のお陰で
+                （？）就労支援・B型事業所での非常勤の職員しています。</p>
+            <p>福祉だけに限りませんが、現場でどのようにすればDialogueが根付くか、 生きる上で「対話」がどのような力にどのような力になり得るかなどを、人との関係性
+                の中で共に考えながら、日々新たに多方面へ働きかけています。
+            </p>
+            <figure class="main_visuals">
+                <img src="images/image_dammy.jpg" alt="">
+                <img src="images/image_dammy.jpg" alt="">
+                <img src="images/image_dammy.jpg" alt="">
+            </figure>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>参加条件</th>
+                        <td>
+                            <p>日臨心会員が優先ですが、話題に関心のある方ならば、歓迎します。お互い顔を見せ合っての参加です。途中参加・途中退出は基本的になしです。</p>
+                            <p>また、このフォーラム、毎回参加者からの「振り返り」のシェアが 素晴らしいことが多く、その後にアンケートに答えていだたいたり、グループの学習となる
+                                フィードバックを出していただいたりをお願いしています（これは基本は任意で強制ではありません）。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>定員</th>
+                        <td>
+                            <p>「約20名：先着10名、その後は多様性などを考慮してこちらで選択させてもらいます」と、これまではしていましたが、今回は、もう少し多くなってもいいの
+                                ではと考えています。日臨心主催と言っても、元々このフォーラムはすべての人に開かれているものです。</p>
+                            <p>今回はさらに対人援助の専門家でない人が多くいらっしゃることを期待しています。参加の条件も緩やかにしてもいいと思っていますので、事情がある方は 連絡してください。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>申し込み</th>
+                        <td>
+                            <p>今回のフォーラムに何を期待しているかを含めた簡単な自己紹介を
+                                書き添えて&#110;&#114;&#115;&#46;&#112;&#108;&#117;&#115;&#64;&#116;&#103;&#46;&#99;&#111;&#109;&#109;&#117;&#102;&#97;&#46;&#106;&#112;に申し込んでください。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>受け付け</th>
+                        <td>
+                            <p>これから即、開始。</p>
+                            <ul>
+                                <li>受付が完了した方には、このフォーラムの詳細と反想法に関しての案内をお送りします。</li>
+                                <li>参加費：無料</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <address>
+                <ul>
+                    <li>コーディネータ/総合司会：日臨心ルネッサンス・プロジェクト代表 滝野功久（いさく）</li>
+                    <li>技術サポート：望月</li>
+                </ul>
+            </address>
+        </article>
+
+        <article class="content lower">
+            <!--<time datetime="2020-11-21">2020-11-21</time>-->
+            <h2>日臨心ルネッサンス・フォーラム#5のお知らせ<span><a type="application/pdf" href="" target="_blank"></a></span></h2>
+            <h3>- 被害者と共に語るフェミニストカウンセリング実践 -<br>
+                ～～～ジェンダー格差社会における物語の書き換え～～～</h3>
+            <address>
+                <ul>
+                    <li>話題提供：井上摩耶子（ウイメンズカウンセリング京都）</li>
+                    <li>聞き手：竹之下雅代（ぱきたっけ）</li>
+                </ul>
+            </address>
+            <p class="details">
+                井上摩耶子さんは、長年日臨心の会員であり、障害児の臨床を経て約30年前から日本におけるフェミニストカウンセリングの礎を築いて来られました。フェミニストカウンセリングといっても馴染みが薄いことと思いますが、悩みを抱える人の個人的な問題を解決するという従来の心理学の視点に対抗して、社会的問題の変革とともに相談者をエンパワーメントする実践です。井上さんは特に物語ることを大切にして来られました。当日は、性暴力被害者支援の取り組みの一端である裁判支援を中心に過去現在、そして未来の話も聞かせていただこうと思っています。（竹之下雅代による紹介）
+            </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>日時</th>
+                        <td>11月29日（日）午後14時から2時間ほど</td>
+                    </tr>
+                    <tr>
+                        <th>参加条件</th>
+                        <td> 日臨心会員が優先ですが、話題に関心のある方ならば、どなたでも申し込めます。お互い顔を見せ合っての参加です。途中参加・途中退出は基本的になしです。
+                            このフォーラム、毎回参加者からの「振り返り」のシェアが素晴らしいことが 多く、後でアンケートに答えていただいたりグループの学習となるフィード
+                            バックを出したりをお願いしています（基本は任意で強制ではありません）。
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>定員</th>
+                        <td>約20名:(先着10名、その後は多様性などを考慮してこちらで選択させてもらいます。)</td>
+                    </tr>
+                    <tr>
+                        <th>申し込み</th>
+                        <td>
+                            今回のフォーラムに何を期待しているかを含めた簡単な自己紹介を入れて、&#110;&#114;&#115;&#46;&#112;&#108;&#117;&#115;&#64;&#116;&#103;&#46;&#99;&#111;&#109;&#109;&#117;&#102;&#97;&#46;&#106;&#112;
+                            に申し込んでください。</td>
+                    </tr>
+                    <tr>
+                        <th>参加費</th>
+                        <td>無料</td>
+                    </tr>
+                </tbody>
+            </table>
+            <address>
+                <ul>
+                    <li>コーディネータ / 総合司会：功久（いさく）</li>
+                    <li>技術サポート：望月</li>
+                </ul>
+            </address>
+            <p>ニュースレターなどでお知らせしましたように、日臨心も他の団体と同じくコロナ禍で現在大変な危機状態にあります。しかし、それをむしろ好機と考え、昨年から始まった新体制が唱える日臨心ルネッサンスに生かしたいと考えています。
+            </p>
+            <p>その具体的な動きの一つとして、少し前からはルネサンス・フォーラムをオンライン（zoom meeting）で開始していますが、非常に興味深い展開が始まっています。</p>
+            <p>今回参加できなくとも、この日臨心の新しい運動と言っていい動きに関心のある方は、ぜひ一言を送ってください。</p>
+            <address>
+                <p>日臨心 運営委員長 滝野功久（いさく）</p>
+            </address>
+        </article>
+        <!-- use VueComponent-->
+        <vue-footer-content></vue-footer-content>
+        <!-- end of VueComponent --->
+    </section>
+    <!-- FIXME:あとでVueComponentとして実装する -->
+    <figure id="scroller">
+        <img src="images/backtotop.png" alt="">
+    </figure>
+</body>

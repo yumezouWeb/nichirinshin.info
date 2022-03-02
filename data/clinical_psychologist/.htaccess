@@ -1,0 +1,5 @@
+SetEnvIf Cookie "5eadb3b49654ea8779a949c76568d45714a92400=2736fab291f04e69b62d490c3c09361f5b82461a" Cookie_OK
+order deny,allow
+deny from all
+allow from env=Cookie_OK
+ErrorDocument 401 http://draft.nichirinshin.info/unauthorized

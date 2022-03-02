@@ -1,0 +1,72 @@
+{
+    "attr": {
+        "id": {
+            "mobile_nav": "mobile_nav",
+            "nav_menu": "nav_menu"
+        },
+        "class": {}
+    },
+    "ruby": "Japan Society of ClinicalPsychology",
+    "mobile_nav": [
+        {
+            "text": "ホーム",
+            "link": "http://nichirinshin.info/"
+        },
+        {
+            "text": "学会について",
+            "link": "http://nichirinshin.info/about"
+        },
+        {
+            "text": "ルネッサンス・プロジェクト",
+            "link": "http://nichirinshin.info/renaissance_project"
+        },
+        {
+            "text": "イベント",
+            "link": "http://nichirinshin.info/event"
+        },
+        {
+            "text": "大会",
+            "link": "http://nichirinshin.info/conference"
+        },
+        {
+            "text": "会則",
+            "link": "http://nichirinshin.info/regulations"
+        },
+        {
+            "text": "声明/提言/主張",
+            "link": "http://nichirinshin.info/statements"
+        },
+        {
+            "text": "お知らせ",
+            "link": "http://nichirinshin.info/notice"
+        },
+        {
+            "text": "学会誌",
+            "link": "http://nichirinshin.info/booklet"
+        },
+        {
+            "text": "会員ページ",
+            "link": "http://nichirinshin.info/app/members/login/"
+        },
+        {
+            "text": "リンク",
+            "link": "http://nichirinshin.info/links"
+        }
+    ],
+    "images": {
+        "three_line": {
+            "id": "threeline",
+            "src": "images/three_line.png",
+            "alt": "mobile_menu",
+            "style": {
+                "width": "30px",
+                "height": "30px"
+            }
+        },
+        "facebook": {
+            "src": "images/facebook.png",
+            "class": "icon_sns",
+            "alt": "facebook"
+        }
+    }
+}

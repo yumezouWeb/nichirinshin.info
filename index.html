@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>日本臨床心理学会 | 公式ウェブサイト</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <!-- 3/22 先方の指定により追加  -->
+    <meta name="keywords" content="臨床心理学,社会構成主義,オープンダイアローグ" />
+    <meta name="description"
+        content="本学会は、臨床心理学に関して、狭義の視点からの研究を行ったり、専門家の視点からのみその行為を考えていく会ではありません。社会的な視点や生活者としての視点を大切にしながら、専門家もそのサービスを受ける側も共に納得し、自己変革を志向していけるような、真の臨床心理学について考えていこうとしています。">
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>-->
+    <!--<script src="https://www.promisejs.org/polyfills/promise-6.1.0.min.js"></script>-->
+    <script type="application/javascript" src="script/libs/promise-6.1.0.js"></script>
+    <!--<script type="application/javascript" src="script/libs/axios.min.js"></script>-->
+    <script type="application/javascript" src="script/libs/TextEncoderTextDecoder.js"></script>
+    <script type="application/javascript" src="script/libs/vue.js"></script>
+    <script>
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1)
+            document.write('<script type="application/javascript" src="script/vue-components-ie-polyfill.js"><\/script>');
+        else
+            /* 3/23 
+             * navigation_mobile.jsの仕事は、
+             * vue-general-components.jsのVUE_MOBILE_HEADER_COMPONENT.methods.showOrHideに移譲しました(大澤)
+             */
+            document.write('<script type="application/javascript" src="script/vue-general-components.js"><\/script>\n');
+//            document.write('<script type="application/javascript" src="script/vue-general-components.js"><\/script>\n\
+//                    <script type="application/javascript" src="script/navgations_mobile.js"><\/script>');
+    </script>
+    <script type="application/javascript" src="script/scroller.js"></script>
+    <link rel="stylesheet" href="css/reset.css" media="all">
+    <link rel="stylesheet" href="css/default.css" media="screen">
+    <style>
+        ol {
+            list-style: decimal;
+            margin: 0 15px;
+            font: 14px meiryo;
+            color: #444444;
+        }
+
+        .news_emphasis {
+            font-size: 1.03em !important;
+            padding: 2px !important;
+            font-weight: normal !important;
+        }
+
+        span.not_category {
+            color: #444 !important;
+            border-radius: none !important;
+            margin: 0 !important;
+            padding: none !important;
+            background: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="vue_app">
+        <vue-mobile-header-content></vue-mobile-header-content>
+        <vue-header-content></vue-header-content>
+        <!--
+        3/22 先方の指定により、以下はコメントアウトしてnews-contentのみに
+        <vue-about-content></vue-about-content>
+        <vue-news-content-fade-in>
+            <vue-news-content></vue-news-content>
+        </vue-news-content-fade-in>
+        <vue-booklet-content-fade-in>
+            <vue-renaissancerorum-content></vue-renaissancerorum-content>
+        </vue-booklet-content-fade-in>
+        <vue-publication-content-fade-in>
+            <vue-publication-content></vue-publication-content>
+        </vue-publication-content-fade-in>
+        <vue-infomation-content-fade-in>
+            <vue-infomation-content></vue-infomation-content>
+        </vue-infomation-content-fade-in>
+        -->
+
+        <vue-news-content></vue-news-content>
+        <vue-footer-content></vue-footer-content>
+        <vue-scroller-content></vue-scroller-content>
+    </section>
+</body>
+
+</html>
